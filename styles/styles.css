@@ -43,6 +43,7 @@ main img {
 
 p {
     margin: 1rem;
+    padding: 0;
 }
 
 main {
@@ -54,6 +55,11 @@ aside {
     width: 840px;
     text-align: center;
     position: relative;
+    margin: 1rem;
+    border: 1px solid var(--border-color);
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
 }
 
 aside img {

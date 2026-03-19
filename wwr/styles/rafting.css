@@ -1,7 +1,7 @@
 :root {
-    --primary-color: royalblue;
-    --secondary-color: lightblue;
-    --accent1-color: burlywood;
+    --primary-color: #00308F;
+    --secondary-color: #005A9C;
+    --accent1-color: #004687;
     --accent2-color: chocolate;
     --heading-font: "Georgia", "Trebuchet MS", serif;
     --body-font: Arial, Tahoma, Helvetica;
@@ -21,8 +21,13 @@ body {
 header,
 main,
 footer {
-    width: 840px;
+    max-width: 1000px;
     margin: 0 auto;
+}
+
+nav a {
+    text-decoration: none;
+    color:
 }
 
 h1,
@@ -43,8 +48,15 @@ article {
     text-decoration: none;
 }
 
+.socialmedia img {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+}
+
 .hero {
     position: relative;
+    width: 100%;
 }
 
 .hero img {
@@ -66,7 +78,11 @@ h1 {
 
 article {
     position: absolute;
-    background-color: var(--secondary-color);
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: var(--secondary-color, 0.7);
+    color: #fff;
 }
 
 .hero article img {

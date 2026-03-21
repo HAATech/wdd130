@@ -17,28 +17,36 @@ body {
 
 nav {
     background-color: var(--primary-color);
-    padding: 10px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
     color: white;
     display: block;
-    padding: 20px;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
 h1 {
     color: var(--primary-color);
     padding: .5rem;
+    border-bottom: 2px var(--border-color);
 }
 
 main img {
-    width: 150px;
+    width: 200px;
     height: auto;
     border: 1px solid var(--secondary-color);
     padding: 2px;
     box-shadow: 0 0 30px gray;
     float: right;
     margin: 0 0 1rem 1rem;
+    display: block;
 }
 
 p {
@@ -47,12 +55,13 @@ p {
 }
 
 main {
-    max-width: 840px;
     width: 100%;
+    grid-column: 2/3;
+    margin: 0 1rem;
 }
 
 aside {
-    width: 840px;
+    width: 20rem;
     text-align: center;
     position: relative;
     margin: 1rem;
@@ -60,6 +69,9 @@ aside {
     padding: 1rem;
     background-color: #eee;
     color: #333;
+    grid-column: 1/2;
+    grid-row: 1/2;
+
 }
 
 aside img {
@@ -70,12 +82,15 @@ aside img {
 
 aside h2 {
     position: absolute;
-    top: 25px;
-    left: 405px;
+    top: 40px;
+    left: 170px;
+    transform: translateX(-50%);
+    margin: 0;
 }
 
 aside img {
-    width: 150px;
+    width: 100%;
+    display: block;
     height: auto;
     border: 1px solid var(--border-color);
     padding: 2px;
@@ -89,7 +104,12 @@ footer {
     text-align: center;
 }
 
-/* Class Selectors */
+header,
+.grid,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
 
 .box {
     clear: right;
@@ -103,4 +123,13 @@ footer {
 .indent {
     padding-left: 2rem;
     width: 840px;
+}
+
+.grid {
+    display: grid;
+    align-items: start;
+    grid-template-columns: 1fr 2fr;
+    max-width: 840px;
+    margin: 0 auto;
+    gap: 50px;
 }

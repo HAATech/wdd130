@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact us and White Water Rafting Website</title>
+  <meta name="description"
+    content="This page will be about how to contact the White Water Rafting Company.">
+  <meta name="author" content="Harrison Armstrong">
+  <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+  <header>
+    <img src="images/wwr-logo.jpeg" alt="White Water Rafting">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="company-heading">
+      <h1>White Water Rafting Company</h1>
+      <p>1322 Big Mouth Road</p>
+      <p>Moab, Utah</p>
+      <p>+1 379-213-2220</p>
+      <p>contact@whitewaterrafting.com</p>
+    </section>
+    <div class="contact-grid">
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14831.710616265267!2d-109.5792570608951!3d38.60325984556631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1774724952186!5m2!1sen!2sus"
+          width="600" height="450" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <section class="form-container">
+        <form action="">
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="user_name" placeholder="Name">
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="user_email" placeholder="Email">
+          </div>
+          <div class="form-row radio-group">
+            <p>Message Purpose</p>
+            <label><input type="radio" name="purpose" value="general">General Inquiry</label>
+            <label><input type="radio" name="purpose" value="reservation">Reservation
+              Question</label>
+            <label><input type="radio" name="purpose" value="suggestion">Website Suggestion</label>
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="user_message" placeholder="Type Here..."
+              rows="4"></textarea>
+          </div>
+          <div class="form-row checkbox-row">
+            <input type="checkbox" id="subscribe" name="subscribe">
+            <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+          </div>
+
+          <button type="submit">Get in Touch!</button>
+
+        </form>
+      </section>
+    </div>
+
+    <section class="employee">
+      <h2>We Are Here to Serve You</h2>
+      <div class="employee-grid">
+        <figure>
+          <img src="images/Jared.jpg" alt="Raft Guide">
+          <figcaption>Raft Guide - Jared</figcaption>
+        </figure>
+        <figure>
+          <img src="images/Grace.jpg" alt="Trip Leader">
+          <figcaption>Trip Leader - Grace</figcaption>
+        </figure>
+        <figure>
+          <img src="images/Mike.jpg" alt="Safety Kayaker">
+          <figcaption>Safety Kayaker - Mike</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>©2026 White Water Rafting | Harrison Armstrong</p>
+    <nav class="socialmedia">
+      <a href="https://facebook.com">
+        <img src="images/facebook-square.svg" alt="Facebook Icon">
+      </a>
+      <a href="https://instagram.com">
+        <img src="images/instagram-square.svg" alt="Instagram Icon">
+      </a>
+      <a href="https://x.com">
+        <img src="images/x-bw.svg" alt="X Icon">
+      </a>
+    </nav>
+  </footer>
+</body>
+
+</html>

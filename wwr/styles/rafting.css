@@ -241,6 +241,16 @@ section.adventure {
     font-weight: bold;
 }
 
+.radio-group label {
+    display: inline-block;
+    margin-right: 15px;
+    font-weight: normal;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 5px;
+}
+
 .form-row label {
     font-weight: bold;
 }
@@ -257,7 +267,7 @@ textarea {
 button[type="submit"] {
     width: 100%;
     padding: 10px;
-    background-color: var(--accent2-color);
+    background-color: var(--accent1-color);
     border: 1px solid var(--accent5-color);
     cursor: pointer;
     border-radius: 5px;

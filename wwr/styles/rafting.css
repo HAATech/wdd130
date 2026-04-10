@@ -250,7 +250,7 @@ section.adventure {
 }
 
 .company-heading h1 {
-    color: var(--accent3-color);
+    color: var(--accent1-color);
     margin-bottom: 5px;
     margin: 10px;
 }
@@ -357,7 +357,7 @@ button[type="submit"] {
 }
 
 .cta-button {
-    background-color: var(--accent2-color);
+    background-color: var(--secondary-color);
     color: var(--accent3-color);
     text-decoration: none;
     padding: 13px 22px;
@@ -376,7 +376,7 @@ button[type="submit"] {
 }
 
 .contact-cta {
-    background-color: var(--accent5-color);
+    background-color: var(--accent6-color);
     padding: 40px;
     margin: 50px auto;
     max-width: 900px;
@@ -388,7 +388,7 @@ button[type="submit"] {
     text-align: center;
     flex-direction: column;
     border-radius: 8px;
-    border: 1px solid var(--accent6-color);
+    border: 1px solid var(--accent5-color);
     gap: 20px;
 }
 
@@ -400,7 +400,7 @@ button[type="submit"] {
 
 .cta-text p {
     margin: 10px 0;
-    color: var(--accent3-color);
+    color: var(--primary-color);
 }
 
 .contact-cta .cta-text {
@@ -560,7 +560,7 @@ button[type="submit"] {
     left: 20px;
     right: 20px;
     background-color: var(--secondary-color);
-    opacity: 0.8;
+    opacity: 0.9;
     color: var(--accent3-color);
     display: flex;
     flex-direction: column;
@@ -576,7 +576,7 @@ button[type="submit"] {
     left: 15%;
     right: 15%;
     padding: 40px;
-    background-color: rgba(0, 48, 143, 0.85);
+    background-color: var(--primary-color);
     border-radius: 8px;
     width: 70%;
     margin-bottom: 50px;
@@ -635,7 +635,7 @@ button[type="submit"] {
 .company-heading h1 {
     position: static;
     background-color: transparent;
-    color: var(--accent2-color);
+    color: var(--accent1-color);
     margin-bottom: 20px;
 }
 

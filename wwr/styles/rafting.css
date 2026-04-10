@@ -360,7 +360,7 @@ button[type="submit"] {
     background-color: var(--accent2-color);
     color: var(--accent3-color);
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 13px 22px;
     border-radius: 5px;
     font-weight: bold;
     margin: 10px 0;
@@ -615,6 +615,7 @@ button[type="submit"] {
 
 .home-page .trip article p {
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
 .home-page .trip article .cta-button {

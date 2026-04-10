@@ -380,9 +380,10 @@ button[type="submit"] {
     padding: 40px;
     margin: 50px auto;
     max-width: 900px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
     margin: 50px auto;
-    justify-content: space-between;
     align-items: center;
     text-align: center;
     flex-direction: column;
@@ -415,30 +416,31 @@ button[type="submit"] {
 
 .newsletter {
     background-color: var(--secondary-color);
-    padding: 50px;
-    margin: 60px -50px;
-    width: calc(100% + 100px);
-    border-radius: 8px;
+    padding: 60px 20px;
+    margin: 60px auto;
+    max-width: 900px;
+    border-radius: 10px;
     text-align: center;
-
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 20px;
 }
 
 .newsletter form {
-    margin-top: 15px;
     color: var(--accent3-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
     gap: 15px;
-    flex-wrap: wrap;
-    max-width: 700px;
-    margin: 0 auto;
+    max-width: 400px;
+    width: 100%;
 }
 
 .newsletter input {
-    padding: 15px;
+    padding: 12px;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     flex: 1;
     min-width: 200px;
     font-family: var(--body-font);
@@ -448,13 +450,19 @@ button[type="submit"] {
 .newsletter button {
     background-color: var(--accent2-color);
     color: var(--accent3-color);
-    padding: 15px 30px;
+    padding: 15px;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
     font-family: var(--heading-font);
     font-weight: bold;
     transition: 0.3s;
+}
+
+.newsletter label,
+.newsletter input,
+.newsletter button {
+    width: 100%;
 }
 
 .newsletter button:hover {
@@ -464,15 +472,24 @@ button[type="submit"] {
 
 .newsletter h2 {
     color: var(--accent3-color);
-    margin-bottom: 20px;
+    margin: 0;
+    font-size: 2rem;
 }
 
 .newsletter p {
+    display: flex;
     color: var(--accent3-color);
     margin-bottom: 30px;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.newsletter h2,
+.newsletter p {
+    color: var(--accent3-color);
+    margin: 0;
+    text-align: center;
 }
 
 .home-grid {
@@ -551,9 +568,67 @@ button[type="submit"] {
     text-align: center;
 }
 
+.home-page .trip article {
+    grid-row: 1;
+    grid-column: 1;
+    position: absolute;
+    bottom: 10%;
+    left: 15%;
+    right: 15%;
+    padding: 40px;
+    background-color: rgba(0, 48, 143, 0.85);
+    border-radius: 8px;
+    width: 70%;
+    margin-bottom: 50px;
+    z-index: 20;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-self: end;
+    text-align: center;
+    justify-self: center;
+}
+
+.home-page .trip h1 {
+    grid-row: 1;
+    grid-column: 1;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: var(--primary-color);
+    padding: 20px;
+    margin: 0;
+    z-index: 10;
+    text-align: center;
+}
+
+.home-page .trip img {
+    grid-row: 1;
+    grid-column: 1;
+    width: 100%;
+    margin: 0;
+    border-radius: 20px;
+    display: block;
+}
+
+.home-page .trip article p {
+    margin-bottom: 20px;
+}
+
+.home-page .trip article .cta-button {
+    display: block;
+    width: fit-content;
+    margin: 20px auto 0 auto;
+    float: none;
+}
+
 .trip {
     position: relative;
     width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 .company-heading h1 {
